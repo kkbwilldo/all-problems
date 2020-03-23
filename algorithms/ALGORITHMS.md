@@ -2,7 +2,7 @@
 
 ## 다익스트라
 
-'''cpp
+```cpp
 #include <vector>
 #include <queue>
 #include <utility>
@@ -35,11 +35,11 @@ vector <int> dijkstra(int src){
 	}
 	return dist;
 }
-'''
+```
 
 ## 트라이 구조
 
-'''cpp
+```cpp
 #include <iostream>
 #include <string.h>
 using namespace std;
@@ -118,5 +118,6 @@ int main ()
 	
 	return 0;
 }
-'''
+
+```
 
