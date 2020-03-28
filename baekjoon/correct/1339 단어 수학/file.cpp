@@ -1,76 +1,58 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
-#include <set>
 #include <string>
 using namespace std;
 
-char alpha[256];
+int numWords,size,maxVal;
+char AlphabetsMap[256];
+string word;
 
-int calc(vector<string> &words, vector<char> &letters, vector<int> &num){
-	int letterSize = letters.size();
+vector <char> letters;
+vector <int> vals;
+vector <string> words;
+
+void Unique(){
+	sort(letters.begin(),letters.end());
+	letters.erase(unique(letters.begin(),letters.end()),letters.end());
+	size=letters.size();
+}
+
+void Assign(){
+	for(int i=9;i>=9-size+1;i--) vals.push_back(i);
+	sort(vals.begin(),vals.end());
+}
+
+int Calc(string word){
+	for(int i=0;i<size;i++) AlphabetsMap[letters[i]]=vals[i];
 	int sum=0;
-	
-	for(int i=0;i<letterSize;i++){
-		alpha[letters[i]] = num[i];
-	}
-	
-	for(string s : words){
-		int now = 0;
-		for(char x : s){
-			now = now * 10 + alpha[x];
-		}
-		sum+=now;
-	}
-	
+	for(int i=0;i<word.size();i++) sum=sum*10+AlphabetsMap[word[i]];
 	return sum;
 }
 
 int main ()
 {
 	ios::sync_with_stdio(false);
-	cin.tie(NULL);
-	cout.tie(NULL);
+	cin.tie(0);cout.tie(0);
 	
 	freopen("input.txt","r",stdin);
 	
-	int numWords;
 	cin>>numWords;
-	
-	vector<string> words(numWords);
-	vector<char> letters;
 	for(int i=0;i<numWords;i++){
-		cin>>words[i];
-		for(char x : words[i]){
-			letters.push_back(x);
+		cin>>word;
+		words.push_back(word);
+		for(int j=0;j<word.size();j++){
+			letters.push_back(word[j]);
 		}
 	}
 	
-	sort(letters.begin(),letters.end());
-	letters.erase(unique(letters.begin(),letters.end()), letters.end());
-	
-	int letterSize = letters.size();
-	vector<int> num;
-	for(int i=9;i>9-letterSize;i--){
-		num.push_back(i);
-	}
-	sort(num.begin(),num.end());
-	
-	int ans = 0;
-	
+	Unique();
+	Assign();
 	do{
-		int now = calc(words,letters,num);
-		if(ans<now) ans = now;
-	} while(next_permutation(num.begin(),num.end()));
-	
-	cout << ans << '\n';
-	
+		int sum=0;
+		for(int i=0;i<words.size();i++) sum+=Calc(words[i]);
+		maxVal=max(maxVal,sum);
+	}while(next_permutation(vals.begin(),vals.end()));
+	cout<<maxVal<<endl;
 	return 0;
 }
-
-
-
-
-
-
-
