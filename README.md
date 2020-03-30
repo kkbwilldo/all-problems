@@ -22,6 +22,21 @@
 * 3187 양치기 꿍 [(링크)](https://www.acmicpc.net/problem/3187)
 * 5213 과외맨 [(링크)](https://www.acmicpc.net/problem/5213)
 * 7682 틱택토 [(링크)](https://www.acmicpc.net/problem/7682)
+* 3190 뱀 [(링크)](https://www.acmicpc.net/problem/3190)
+* 13458 시험 감독 [(링크)](https://www.acmicpc.net/problem/13458)
+* 14503 로봇 청소기 [(링크)](https://www.acmicpc.net/problem/14503)
+* 14890 경사로 [(링크)](https://www.acmicpc.net/problem/14890)
+* 15684 사다리 조작 [(링크)](https://www.acmicpc.net/problem/15684)
+* 15685 드래곤 커브 [(링크)](https://www.acmicpc.net/problem/15685)
+* 15686 치킨 배달 [(링크)](https://www.acmicpc.net/problem/15686)
+* 5373 큐빙 [(링크)](https://www.acmicpc.net/problem/5373)
+* 16234 인구 이동 [(링크)](https://www.acmicpc.net/problem/16234)
+* 17140 이차원 배열과 연산 [(링크)](https://www.acmicpc.net/problem/17140)
+* 17142 연구소 3 [(링크)](https://www.acmicpc.net/problem/17142)
+* 17837 새로운 게임 2 [(링크)](https://www.acmicpc.net/problem/17837)
+* 17822 원판 돌리기 [(링크)](https://www.acmicpc.net/problem/17822)
+* 17825 주사위 윷놀이 [(링크)](https://www.acmicpc.net/problem/17825)
+
 
 ## SWEA
 * 1208 SW 문제해결 기본 1일차 - Flatten [(링크)](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV139KOaABgCFAYh&categoryId=AV139KOaABgCFAYh&categoryType=CODE)
@@ -46,8 +61,5 @@
 * 폰켓몬 [(링크)](https://programmers.co.kr/learn/courses/30/lessons/1845?language=cpp)
 * 나누어 떨어지는 숫자 배열 [(링크)](https://programmers.co.kr/learn/courses/30/lessons/12910)
 * 가사 검색 [(링크)](https://programmers.co.kr/learn/courses/30/lessons/60060)
-
-
-
 
 

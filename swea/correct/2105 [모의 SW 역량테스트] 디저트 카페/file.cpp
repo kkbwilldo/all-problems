@@ -106,11 +106,8 @@ int main ()
 						if(dessert[map[Bottom.r][Bottom.c]]>1) break;					
 					
 						goLow(Top,"GO_LEFT",Left.r-Top.r); // Top -> Left
-						//if(hasRepeated()) continue; // 중복 확인
 						goLow(Top,"GO_RIGHT",Right.r-Top.r); // Top -> Right				
-						//if(hasRepeated()) continue; // 중복 확인
 						goLow(Left,"GO_RIGHT",Bottom.r-Left.r); // Left -> Bottom
-						//if(hasRepeated()) continue; // 중복 확인
 						goLow(Right,"GO_LEFT",Bottom.r-Right.r); // Right -> Bottom
 						if(hasRepeated()) continue; // 중복 확인
 						// 디저트 개수 세기
