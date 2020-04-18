@@ -21,10 +21,7 @@
 * 3187 양치기 꿍 [(링크)](https://www.acmicpc.net/problem/3187)
 * 5213 과외맨 [(링크)](https://www.acmicpc.net/problem/5213)
 * 7682 틱택토 [(링크)](https://www.acmicpc.net/problem/7682)
-* 14890 경사로 [(링크)](https://www.acmicpc.net/problem/14890)
-* 17140 이차원 배열과 연산 [(링크)](https://www.acmicpc.net/problem/17140)
 * 17142 연구소 3 [(링크)](https://www.acmicpc.net/problem/17142)
-* 17837 새로운 게임 2 [(링크)](https://www.acmicpc.net/problem/17837)
 
 
 ## SWEA
