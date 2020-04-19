@@ -54,14 +54,15 @@ int Move(int StartR,int StartC,int StartDir){
 		}
 		else{
 			if(r==StartR&&c==StartC) break;
-			else if(board[r][c]==0) continue;
 			else if(board[r][c]==-1) break;
+			else if(board[r][c]==0) continue;
 			else if(6<=board[r][c]&&board[r][c]<=10){
 				int holeNum=board[r][c];
 				for(int i=0;i<2;i++){
 					int pairR=wormHoles[holeNum][i].first;
 					int pairC=wormHoles[holeNum][i].second;
-					if(r!=pairR&&c!=pairC){
+					// 여기 때문에 49개만 맞음 ㅠㅠ &&가 아닌 ||로 바꿔서 패스했다
+					if(r!=pairR||c!=pairC){ 
 						r=pairR;
 						c=pairC;
 						break;
