@@ -23,7 +23,7 @@ int main(){
 	ios::sync_with_stdio(false);
 	cin.tie(0);cout.tie(0);
 	
-	freopen("input.txt","rr",stdin);
+	freopen("input.txt","r",stdin);
 	
 	cin>>testcase;
 	for(int test=1;test<=testcase;test++){
@@ -40,6 +40,7 @@ int main(){
 		while(!q.empty()){
 			int now=q.front();
 			q.pop();
+			
 			// Double
 			int next=(now*2)%10000;
 			if(!visited[next]){

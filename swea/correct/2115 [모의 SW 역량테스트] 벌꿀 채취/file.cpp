@@ -73,7 +73,5 @@ int main ()
 		}
 		cout<<"#"<<test<<" "<<maxVal<<endl;
 	}
-	
-	
 	return 0;
 }
