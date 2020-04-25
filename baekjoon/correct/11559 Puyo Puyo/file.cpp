@@ -110,7 +110,7 @@ int main ()
 		PullDown();
 		CheckAndPop();
 	}
-	
+
 	cout<<numChains<<endl;
 	return 0;
 }
