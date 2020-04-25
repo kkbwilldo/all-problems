@@ -10,13 +10,13 @@ vector <string> purchase;
 vector <int> money;
 vector <vector<int> > date;
 
-
 void Init(vector <string> &purchase){
 	purchase.push_back("2019/01/30 5000");
 	purchase.push_back("2019/04/05 10000");
 	purchase.push_back("2019/06/10 20000");
 	purchase.push_back("2019/08/15 50000");
 	purchase.push_back("2019/12/01 100000");
+	purchase.push_back("2019/12/25 100000");
 }
 
 void Split(vector <string> &purchase){
@@ -48,11 +48,17 @@ void SetCalendar(vector<string> purchase){
 		int Start=0;
 		for(int j=1;j<date[i][1];j++) Start+=numDays[j];
 		Start+=date[i][2];
-		for(int j=Start;j<Start+30;j++) calendar[j]+=money[i];
+		for(int j=Start;j<Start+30;j++){
+			if(j>365) break; // 이거 해줘야 한다.....
+			calendar[j]+=money[i];
+		}
 	}
 }
 
 vector <int> solution(vector<string> purchase){
+	Init(purchase);
+	Split(purchase);
+	SetCalendar(purchase);
 	vector <int> answer(5,0);
 	for(int i=1;i<=365;i++){
 		if(calendar[i]<10000) answer[0]++;
@@ -75,9 +81,6 @@ void Print(){
 }
 
 int main (){
-	Init(purchase);
-	Split(purchase);
-	SetCalendar(purchase);
 	vector <int> answer;
 	answer=solution(purchase);
 	//Print();
