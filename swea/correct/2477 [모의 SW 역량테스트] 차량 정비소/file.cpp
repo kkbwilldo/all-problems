@@ -1,4 +1,5 @@
 #include <iostream>
+#include <algorithm>
 #include <vector>
 #include <queue>
 #define endl '\n'
@@ -21,12 +22,12 @@ struct customer{
 };
 
 struct receptDesk{
-	int elapseTime;
+	int Time;
 	bool empty;
 };
 
 struct repairDesk{
-	int elapseTime;
+	int Time;
 	bool empty;
 };
 
@@ -40,9 +41,18 @@ void MarkDone(int Time){
 	for(int i=1;i<=numCustomers;i++){
 		if(customers[i].receptEnd==Time)
 			receptDesks[customers[i].receptNum].empty=true;
-		if(customers[i].repairEnd==Time)
-			receptDesks[customers[i].repairNum].empty=true;
+		if(customers[i].repairEnd==Time){
+			repairDesks[customers[i].repairNum].empty=true;
+			customers[i].done=true; // ㅇㅣ거 안해서 틀렸다!!!!
+		}
 	}
+}
+
+void PrintDone(int Time){
+	for(int i=1;i<=numCustomers;i++){
+		cout<<customers[i].done<<" ";
+	}
+	cout<<endl;
 }
 
 bool AllDone(int Time){
@@ -102,8 +112,8 @@ void GetService(int Time,int customerNum,string type){
 				receptDesks[i].empty=false;
 				customers[customerNum].receptNum=i;
 				customers[customerNum].receptStart=Time;
-				customers[customerNum].receptEnd=Time+receptDesks[i].elapseTime;
-				customers[customerNum].repairStart=customers[customerNum].receptEnd;
+				customers[customerNum].receptEnd=Time+receptDesks[i].Time;
+				customers[customerNum].repairStart=Time+receptDesks[i].Time;
 				return;
 			}
 		}
@@ -114,11 +124,17 @@ void GetService(int Time,int customerNum,string type){
 				repairDesks[i].empty=false;
 				customers[customerNum].repairNum=i;
 				customers[customerNum].repairStart=Time;
-				customers[customerNum].repairEnd=Time+repairDesks[i].elapseTime;
+				customers[customerNum].repairEnd=Time+repairDesks[i].Time;
 				return;
 			}
 		}
 	}
+}
+
+void Init(){
+	answer=0;
+	while(!receptWaitingLine.empty()) receptWaitingLine.pop();
+	while(!repairWaitingLine.empty()) repairWaitingLine.pop();
 }
 
 int main (){
@@ -129,17 +145,18 @@ int main (){
 	
 	cin>>testcase;
 	for(int test=1;test<=testcase;test++){
+		Init();
 		cin>>numRecepts>>numRepairs>>numCustomers>>receptNum>>repairNum;
 		for(int i=1;i<=numRecepts;i++){
 			int Time;
 			cin>>Time;
-			receptDesks[i].elapseTime=Time;
+			receptDesks[i].Time=Time;
 			receptDesks[i].empty=true;
 		}
 		for(int i=1;i<=numRepairs;i++){
 			int Time;
 			cin>>Time;
-			repairDesks[i].elapseTime=Time;
+			repairDesks[i].Time=Time;
 			repairDesks[i].empty=true;
 		}
 		for(int i=1;i<=numCustomers;i++){
@@ -154,14 +171,15 @@ int main (){
 		}
 		
 		int Time=0;
+		//PrintDone(Time);
 		while(1){
-			cout<<"Time: "<<Time<<endl;
 			MarkDone(Time); // 접수 및 정비 끝낸 사람 done 표시
+			//PrintDone(Time);
 			if(AllDone(Time)) break; // 모든 고객이 서비스를 모두 받았으면
 			PushToWait(Time,"recept"); // 현재 시각에 도착하는 고객을 대기 큐에 푸쉬
 			int availableRecepts=GetAvailable("recept"); // 사용 가능한 접수 창구 수
 			// 사용 가능한 접수 창구가 존재 & 대기중인 손님 존재 
-			if(availableRecepts>0&&receptWaitingLine.size()>0){ 
+			if(availableRecepts>0&&!receptWaitingLine.empty()){ 
 				while(!receptWaitingLine.empty()){ // 대기열이 없어질 때까지
 					if(availableRecepts<=0) break; // 사용가능한 접수 창구 없으면
 					int frontCustomer=receptWaitingLine.front();
@@ -172,7 +190,7 @@ int main (){
 			}
 			PushToWait(Time,"repair");
 			int availableRepairs=GetAvailable("repair");
-			if(availableRepairs>0&&repairWaitingLine.size()>0){
+			if(availableRepairs>0&&!repairWaitingLine.empty()){
 				while(!repairWaitingLine.empty()){
 					if(availableRepairs<=0) break;
 					int frontCustomer=repairWaitingLine.front();
@@ -183,6 +201,7 @@ int main (){
 			}
 			Time++;
 		}
+		//cout<<"Time: "<<Time<<endl;
 		for(int i=1;i<=numCustomers;i++){
 			if(customers[i].receptNum==receptNum){ // 정답 접수 창구 사용한 고객
 				if(customers[i].repairNum==repairNum){ // 정답 정비 창구 사용한 고객
