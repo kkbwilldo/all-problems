@@ -5,7 +5,7 @@
 #define endl "\n"
 using namespace std;
 
-const int MAX=350;
+const int MAX=500;
 const int SIZE=150;
  
 struct cell{

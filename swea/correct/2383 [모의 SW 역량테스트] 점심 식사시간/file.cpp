@@ -92,9 +92,6 @@ void GoDown(){
 		}
 		Time++;
 	}
-	if(minVal>Time){
-		
-	}
 	minVal=min(minVal,Time);
 }
 
@@ -102,10 +99,13 @@ void AllCases(int depth){
 	if(depth==people.size()){
 		for(int i=0;i<2;i++){
 			while(!waitList[i].empty()) waitList[i].pop();
+			stairs[i].numPeople=0;
 		}
 		//ㅇㅕ기서 초기화 안해서 틀렸다
-		for(int i=0;i<people.size();i++) people[i].done=false;
-		for(int i=0;i<2;i++) stairs[i].numPeople=0;
+		for(int i=0;i<people.size();i++){
+			people[i].done=false;
+			people[i].dist=people[i].startClk=people[i].endClk=-1; // 이거!!
+		}
 		GoDown();
 		return;
 	}
