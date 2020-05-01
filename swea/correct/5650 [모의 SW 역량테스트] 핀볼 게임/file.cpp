@@ -1,3 +1,14 @@
+/*
+핀볼 게임
+제한 : 50개 테스트 케이스 3초
+목표 : 시작 가능한 모든 점으로부터 4방향으로 퍼트리고 얻을 수 있는 최대 스코어 구하기
+
+ChangeDir(int type,int dir) :
+
+Move(int StartR,int StartC,int StartDir) :
+
+
+*/
 #include <iostream>
 #include <unordered_map>
 #include <algorithm>

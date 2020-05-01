@@ -1,5 +1,6 @@
 # 삼성 기출 리스트(~5/10 일요일)
-> D-9                 
+> D-13             
+> 4/27 4/28 4/29 4/30 (4일)                 
 > 5/1 5/2 5/3 5/4 5/5 5/6 5/7 5/8 5/9 5/10 (10일)               
 
 ## 백준
@@ -55,39 +56,5 @@
 - 줄기세포배양 [(5653)](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AWXRJ8EKe48DFAUo&categoryId=AWXRJ8EKe48DFAUo&categoryType=CODE)
 - 벽돌 깨기 [(5656)](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AWXRQm6qfL0DFAUo&categoryId=AWXRQm6qfL0DFAUo&categoryType=CODE)
 - 보물상자 비밀번호 [(5658)](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AWXRUN9KfZ8DFAUo&categoryId=AWXRUN9KfZ8DFAUo&categoryType=CODE)
-
-## SWEA 추가 문제
-- 격자판의 숫자 이어 붙이기 [(2819)](https://swexpertacademy.com/main/learn/course/lectureProblemViewer.do)
-- 범준이의 제주도 여행 계획 [(1798)](https://swexpertacademy.com/main/learn/course/lectureProblemViewer.do)
-- 혁진이의 프로그램 검증 [(1824)](https://swexpertacademy.com/main/learn/course/lectureProblemViewer.do)
-- 러시아 국기 같은 깃발 [(4613)](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AWQl9TIK8qoDFAXj&categoryId=AWQl9TIK8qoDFAXj&categoryType=CODE)
-- 재미있는 오셀로 게임 [(4615)](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AWQmA4uK8ygDFAXj&categoryId=AWQmA4uK8ygDFAXj&categoryType=CODE)
-- 지희의 고장난 계산기 [(1808)](https://swexpertacademy.com/main/learn/course/lectureProblemViewer.do)
-- 수정이의 타일 자르기 [(1812)](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV4yGVsKC0YDFAUx&categoryId=AV4yGVsKC0YDFAUx&categoryType=CODE)
-- 단순 2진 암호코드 [(1240)](https://swexpertacademy.com/main/learn/course/lectureProblemViewer.do)
-- 최대 성적표 만들기 [(4466)](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AWOUfCJ6qVMDFAWg&categoryId=AWOUfCJ6qVMDFAWg&categoryType=CODE)
-- 파핑파핑 지뢰찾기 [(1868)](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV5LwsHaD1MDFAXc&categoryId=AV5LwsHaD1MDFAXc&categoryType=CODE)
-- 농작물 수확하기 [(2805)](https://swexpertacademy.com/main/learn/course/lectureProblemViewer.do)
-- 대각선 출력하기 [(2027)](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV5QFuZ6As0DFAUq&categoryId=AV5QFuZ6As0DFAUq&categoryType=CODE)
-- 숫자 배열 회전 [(1961)](https://swexpertacademy.com/main/learn/course/lectureProblemViewer.do)
-- 암호코드 스캔 [(1242)](https://swexpertacademy.com/main/learn/course/lectureProblemViewer.do)
-- 최빈수 구하기 [(1204)](https://swexpertacademy.com/main/learn/course/lectureProblemViewer.do)
-- 스도쿠 검증 [(1974)](https://swexpertacademy.com/main/learn/course/lectureProblemViewer.do)
-- 달팽이 숫자 [(1954)](https://swexpertacademy.com/main/learn/course/lectureProblemViewer.do)
-- 중간값 찾기 [(2063)](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV5QPsXKA2UDFAUq&categoryId=AV5QPsXKA2UDFAUq&categoryType=CODE)
-- Contact [(1238)](https://swexpertacademy.com/main/learn/course/lectureProblemViewer.do)
-- Flatten [(1208)](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV139KOaABgCFAYh&categoryId=AV139KOaABgCFAYh&categoryType=CODE)
-- Ladder1 [(1210)](https://swexpertacademy.com/main/learn/course/lectureProblemViewer.do)
-- Ladder2 [(1211)](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV14BgD6AEECFAYh&categoryId=AV14BgD6AEECFAYh&categoryType=CODE)
-- N-Queen [(2806)](https://swexpertacademy.com/main/learn/course/lectureProblemViewer.do)
-- 최대 상금 [(1244)](https://swexpertacademy.com/main/learn/course/lectureProblemViewer.do)
-- 최장 경로 [(2814)](https://swexpertacademy.com/main/learn/course/lectureProblemViewer.do)
-- 길찾기 [(1219)](https://swexpertacademy.com/main/learn/course/lectureProblemViewer.do)
-- 보급로 [(1249)](https://swexpertacademy.com/main/learn/course/lectureProblemViewer.do)
-- View [(1206)](https://swexpertacademy.com/main/learn/course/lectureProblemViewer.do)
-- 미로1 [(1226)](https://swexpertacademy.com/main/learn/course/lectureProblemViewer.do)
-- 미로2 [(1227)](https://swexpertacademy.com/main/learn/course/lectureProblemViewer.do)
-- Sum [(1209)](https://swexpertacademy.com/main/learn/course/lectureProblemViewer.do)
-
 
 
