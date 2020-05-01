@@ -2,7 +2,7 @@
 > D-9                 
 > 5/1 5/2 5/3 5/4 5/5 5/6 5/7 5/8 5/9 5/10 (10일)               
 
-## 백준
+## 백준(30문제)
 - 뱀 [(3190)](https://www.acmicpc.net/problem/3190)
 - 큐빙 [(5373)](https://www.acmicpc.net/problem/5373)
 - 2048(Easy) [(12100)](https://www.acmicpc.net/problem/12100)
@@ -34,7 +34,7 @@
 - 주사위 윷놀이 [(17825)](https://www.acmicpc.net/problem/17825)
 - 새로운 게임 [(17837)](https://www.acmicpc.net/problem/17837)
 
-## SWEA
+## SWEA(20문제)
 - 등산로 조성 [(1949)](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV5PoOKKAPIDFAUq&categoryId=AV5PoOKKAPIDFAUq&categoryType=CODE)
 - 수영장 [(1952)](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV5PpFQaAQMDFAUq&categoryId=AV5PpFQaAQMDFAUq&categoryType=CODE)
 - 탈주범 검거 [(1953)](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV5PpLlKAQ4DFAUq&categoryId=AV5PpLlKAQ4DFAUq&categoryType=CODE)
@@ -56,7 +56,7 @@
 - 벽돌 깨기 [(5656)](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AWXRQm6qfL0DFAUo&categoryId=AWXRQm6qfL0DFAUo&categoryType=CODE)
 - 보물상자 비밀번호 [(5658)](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AWXRUN9KfZ8DFAUo&categoryId=AWXRUN9KfZ8DFAUo&categoryType=CODE)
 
-## SWEA 추가 문제
+## SWEA 추가 문제(31문제)
 - 격자판의 숫자 이어 붙이기 [(2819)](https://swexpertacademy.com/main/learn/course/lectureProblemViewer.do)
 - 범준이의 제주도 여행 계획 [(1798)](https://swexpertacademy.com/main/learn/course/lectureProblemViewer.do)
 - 혁진이의 프로그램 검증 [(1824)](https://swexpertacademy.com/main/learn/course/lectureProblemViewer.do)
