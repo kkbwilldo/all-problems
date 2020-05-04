@@ -28,7 +28,7 @@ void AllCases(int depth,vector <int> price){
 	}
 	int curPrice=MakePrice(price); // 중복 제거,이거 안해서 틀렸다!!!!!!!!
 	if(visited[curPrice][depth]) return; // 한번 방문한 숫자는 계속해서 방문 안할 거다!
-	visited[curPrice][depth]=true;
+	visited[curPrice][depth]=true; // 방문 취소 하지 않는다!!!!!!!!
 	for(int i=0;i<size-1;i++){
 		for(int j=i+1;j<size;j++){
 			int temp=price[i];
