@@ -2,8 +2,9 @@
 
 ## DP문제 추가 예정 
 
-## 백준 추가 문제(29문제)
+## 백준 추가 문제(30문제)
 
+- 게리맨더링 [(17471)](https://www.acmicpc.net/problem/17471)
 - 미네랄 [(2933)](https://www.acmicpc.net/problem/2933)
 - PUYO PUYO [(11559)](https://www.acmicpc.net/problem/11559)
 - iSharp [(3568)](https://www.acmicpc.net/problem/3568)
