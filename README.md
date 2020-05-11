@@ -3,7 +3,7 @@
 > 5/5 5/6 5/7 5/8 5/9 5/10 (5일)               
 
 ## SWEA 추가 문제(31문제)
-- 재미있는 오셀로 게임 [(4615)](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AWQmA4uK8ygDFAXj&categoryId=AWQmA4uK8ygDFAXj&categoryType=CODE) [x]
+- 재미있는 오셀로 게임 [(4615)](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AWQmA4uK8ygDFAXj&categoryId=AWQmA4uK8ygDFAXj&categoryType=CODE)
 - 러시아 국기 같은 깃발 [(4613)](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AWQl9TIK8qoDFAXj&categoryId=AWQl9TIK8qoDFAXj&categoryType=CODE)
 - 최대 성적표 만들기 [(4466)](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AWOUfCJ6qVMDFAWg&categoryId=AWOUfCJ6qVMDFAWg&categoryType=CODE)
 - 격자판의 숫자 이어 붙이기 [(2819)](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV7I5fgqEogDFAXB&categoryId=AV7I5fgqEogDFAXB&categoryType=CODE)
@@ -20,7 +20,7 @@
 - 수정이의 타일 자르기 [(1812)](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV4yGVsKC0YDFAUx&categoryId=AV4yGVsKC0YDFAUx&categoryType=CODE) [x]
 - 지희의 고장난 계산기 [(1808)](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV4yC3pqCegDFAUx&categoryId=AV4yC3pqCegDFAUx&categoryType=CODE) [x]
 - 범준이의 제주도 여행 계획 [(1798)](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV4x9oyaCR8DFAUx&categoryId=AV4x9oyaCR8DFAUx&categoryType=CODE) [x]
-- 보급로 [(1249)](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV15QRX6APsCFAYD&categoryId=AV15QRX6APsCFAYD&categoryType=CODE) [x]
+- 보급로 [(1249)](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV15QRX6APsCFAYD&categoryId=AV15QRX6APsCFAYD&categoryType=CODE)
 - 최대 상금 [(1244)](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV15Khn6AN0CFAYD&categoryId=AV15Khn6AN0CFAYD&categoryType=CODE)
 - 암호코드 스캔 [(1242)](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV15JEKKAM8CFAYD&categoryId=AV15JEKKAM8CFAYD&categoryType=CODE) [x]
 - 단순 2진 암호코드 [(1240)](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV15FZuqAL4CFAYD&categoryId=AV15FZuqAL4CFAYD&categoryType=CODE) [x]
@@ -32,7 +32,7 @@
 - Ladder1 [(1210)](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV14ABYKADACFAYh&categoryId=AV14ABYKADACFAYh&categoryType=CODE)
 - Sum [(1209)](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV13_BWKACUCFAYh&categoryId=AV13_BWKACUCFAYh&categoryType=CODE)
 - Flatten [(1208)](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV139KOaABgCFAYh&categoryId=AV139KOaABgCFAYh&categoryType=CODE)
-- View [(1206)](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV134DPqAA8CFAYh&categoryId=AV134DPqAA8CFAYh&categoryType=CODE) [x]
+- View [(1206)](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV134DPqAA8CFAYh&categoryId=AV134DPqAA8CFAYh&categoryType=CODE)
 - 최빈수 구하기 [(1204)](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV13zo1KAAACFAYh&categoryId=AV13zo1KAAACFAYh&categoryType=CODE)
 
 

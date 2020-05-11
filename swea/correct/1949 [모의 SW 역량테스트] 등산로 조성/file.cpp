@@ -1,3 +1,4 @@
+// 등산로 조성 
 #include <iostream>
 #include <vector>
 #include <utility>
@@ -32,8 +33,8 @@ void dfs(int x,int y,int cnt){
 					int next = map[nx][ny];
 					map[nx][ny] = map[x][y]-1;
 					dfs(nx,ny,cnt+1);
-					map[nx][ny] = next;
-					hasDigged = visited[nx][ny] = false;
+					map[nx][ny] = next; // 파기 전으로 복구 
+					hasDigged = visited[nx][ny] = false; // 파기 전으로 복구 
 				}
 			}
 		}
