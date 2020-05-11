@@ -1,6 +1,38 @@
-# 삼성 기출 리스트(~5/10 일요일)
-> D-9                 
-> 5/5 5/6 5/7 5/8 5/9 5/10 (5일)               
+# 삼성 기출 리스트
+
+## DP문제 추가 예정 
+
+## 백준 추가 문제(29문제)
+
+- 미네랄 [(2933)](https://www.acmicpc.net/problem/2933)
+- PUYO PUYO [(11559)](https://www.acmicpc.net/problem/11559)
+- iSharp [(3568)](https://www.acmicpc.net/problem/3568)
+- LCD Test [(2290)](https://www.acmicpc.net/problem/2290)
+- 시그널 [(16113)](https://www.acmicpc.net/problem/16113)
+- 피아의 아틀리에 ~신비한 대회의 연금술사~ [(15898)](https://www.acmicpc.net/problem/15898)
+- Yut Nori [(15778)](https://www.acmicpc.net/problem/15778)
+- 달이 차오른다, 가자. [(1194)](https://www.acmicpc.net/problem/1194)
+- 백조의 호수 [(3197)](https://www.acmicpc.net/problem/3197)
+- 월드컵 [(6987)](https://www.acmicpc.net/problem/6987)
+- 거북이 [(8911)](https://www.acmicpc.net/problem/8911)
+- CPU [(16506)](https://www.acmicpc.net/problem/16506)
+- N-Queen [(9663)](https://www.acmicpc.net/problem/9663)
+- 빙산 [(2573)](https://www.acmicpc.net/problem/2573)
+- 알고스팟 [(1261)](https://www.acmicpc.net/problem/1261)
+- 양 [(3184)](https://www.acmicpc.net/problem/3184)
+- 모래성 [(10711)](https://www.acmicpc.net/problem/10711)
+- 꽃길 [(14620)](https://www.acmicpc.net/problem/14620)
+- 불! [(4179)](https://www.acmicpc.net/problem/4179)
+- 탈출 [(3055)](https://www.acmicpc.net/problem/3055)
+- 비숍[(1799)](https://www.acmicpc.net/problem/1799)
+- 탈옥[(9376)](https://www.acmicpc.net/problem/9376)
+- 벽 부수고 이동하기 2 [(14442)](https://www.acmicpc.net/problem/14442)
+- 한윤정이 이탈리아에 가서 아이스크림을 사먹는데 [(2422)](https://www.acmicpc.net/problem/2422)
+- 에너지 모으기 [(16198)](https://www.acmicpc.net/problem/16198)
+- 두 동전 [(16197)](https://www.acmicpc.net/problem/16197)
+- 테트리스 [(3019)](https://www.acmicpc.net/problem/3019)
+- 자와 각도기 [(2916)](https://www.acmicpc.net/problem/2916)
+- 새로운 하노이 탑 [(12906)](https://www.acmicpc.net/problem/12906)
 
 ## SWEA 추가 문제(31문제)
 - 재미있는 오셀로 게임 [(4615)](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AWQmA4uK8ygDFAXj&categoryId=AWQmA4uK8ygDFAXj&categoryType=CODE)
