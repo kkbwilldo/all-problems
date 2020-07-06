@@ -7,59 +7,51 @@
 using namespace std;
 
 const int MAX=13;
-const int INF=987987987;
 
-int size,maxNum;
-int answer;
-int r,c,cnt,type,Next;
-int dist[MAX*MAX];
+int size,answer;
+int r,c,moveCnt,Next,type;
 int board[MAX][MAX];
+bool visited[MAX][MAX][MAX*MAX][3];
 
-int knightR[]={-2,-2,-1,1,2,2,-1,1};
-int knightC[]={-1,1,-2,-2,-1,1,2,2};
+int KnightR[]={-2,-2,-1,1,2,2,-1,1};
+int KnightC[]={-1,1,-2,-2,-1,1,2,2};
 int RookR[]={-1,1,0,0};
 int RookC[]={0,0,-1,1};
 int BishopR[]={-1,-1,1,1};
 int BishopC[]={-1,1,-1,1};
 
-queue <tuple<int,int,int,int,int> > q;
-
-void Init(){
-	for(int i=0;i<MAX*MAX;i++) dist[i]=INF;
-	while(!q.empty()) q.pop();
-}
-
-void Move(int x,int y,int StartType){
-	q.push(make_tuple(x,y,0,StartType,2));
-	maxNum=2;
+void Move(int StartR,int StartC,int StartType){
+	visited[StartR][StartC][2][StartType]=true;
+	queue <tuple<int,int,int,int,int> > q; // r,c,moveCnt,Next,type
+	q.push(make_tuple(StartR,StartC,0,2,StartType));
 	while(!q.empty()){
-		tie(r,c,cnt,type,Next)=q.front();
+		tie(r,c,moveCnt,Next,type)=q.front();
 		q.pop();
-		if(Next+1<maxNum) continue;
-		if(dist[Next]<cnt) continue;
-		if(board[r][c]==Next&&Next==size*size){
-			answer=min(answer,cnt);
+		if(Next==size*size+1){
+			answer=moveCnt;
 			break;
 		}
-		if(Next>=size*size+1) break;
+		// 다음 번호 갱신
 		if(board[r][c]==Next){
-			maxNum=Next+1;
-			dist[Next]=cnt;
-			q.push(make_tuple(r,c,cnt,type,Next+1));
+			if(visited[r][c][Next+1][type]) continue;
+			visited[r][c][Next+1][type]=true;
+			q.push(make_tuple(r,c,moveCnt,Next+1,type));
 			continue;
 		}
 		// 말 바꾸기
 		for(int i=0;i<3;i++){
 			if(type==i) continue;
-			q.push(make_tuple(r,c,cnt+1,i,Next));
+			q.push(make_tuple(r,c,moveCnt+1,Next,i));
 		}
 		// 나이트
 		if(type==0){
 			for(int i=0;i<8;i++){
-				int nr=r+knightR[i];
-				int nc=c+knightC[i];
+				int nr=r+KnightR[i];
+				int nc=c+KnightC[i];
 				if(nr<0||nr>=size||nc<0||nc>=size) continue;
-				q.push(make_tuple(nr,nc,cnt+1,type,Next));
+				if(visited[nr][nc][Next][type]) continue;
+				visited[nr][nc][Next][type]=true;
+				q.push(make_tuple(nr,nc,moveCnt+1,Next,type));
 			}
 		}
 		// 룩
@@ -68,9 +60,12 @@ void Move(int x,int y,int StartType){
 				int nr=r+RookR[i];
 				int nc=c+RookC[i];
 				while(0<=nr&&nr<size&&0<=nc&&nc<size){
-					q.push(make_tuple(nr,nc,cnt+1,type,Next));
-					nr+=RookR[i];
-					nc+=RookC[i];
+					if(!visited[nr][nc][Next][type]){
+						visited[nr][nc][Next][type]=true;
+						q.push(make_tuple(nr,nc,moveCnt+1,Next,type));
+						nr+=RookR[i];
+						nc+=RookC[i];
+					}
 				}
 			}
 		}
@@ -80,9 +75,12 @@ void Move(int x,int y,int StartType){
 				int nr=r+BishopR[i];
 				int nc=c+BishopC[i];
 				while(0<=nr&&nr<size&&0<=nc&&nc<size){
-					q.push(make_tuple(nr,nc,cnt+1,type,Next));
-					nr+=BishopR[i];
-					nc+=BishopC[i];
+					if(!visited[nr][nc][Next][type]){
+						visited[nr][nc][Next][type]=true;
+						q.push(make_tuple(nr,nc,moveCnt+1,Next,type));
+						nr+=BishopR[i];
+						nc+=BishopC[i];
+					}
 				}
 			}
 		}
@@ -96,7 +94,6 @@ int main (){
 	freopen("input.txt","r",stdin);
 	
 	int StartR,StartC;
-	answer=INF;
 	cin>>size;
 	for(int r=0;r<size;r++){
 		for(int c=0;c<size;c++){
@@ -107,10 +104,7 @@ int main (){
 			}
 		}
 	}
-	for(int i=0;i<3;i++){
-		Init();
-		Move(StartR,StartC,i);
-	}
+	for(int i=0;i<3;i++) Move(StartR,StartC,i);
 	cout<<answer<<endl;
 	return 0;
 }
