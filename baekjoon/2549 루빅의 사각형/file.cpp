@@ -43,13 +43,15 @@ void Move(int type,int idx,int times){
 	}
 }
 
-void dfs(int depth,int numMoves,vector <tuple<int,int,int> > v){
+void dfs(int depth,int numMoves,vector <tuple<int,int,int> > &v){
 	if(depth>7) return;
 	if(numMoves>answerCnt) return;
-	if(Check()==true&&answerCnt>numMoves){
-		answerVector=v;
-		answerCnt=numMoves;
-		return;
+	if(Check()==true){
+		if(answerCnt>numMoves){
+			answerVector=v;
+			answerCnt=numMoves;
+			return;
+		}
 	}
 	for(int type=1;type<=2;type++){
 		for(int idx=1;idx<=4;idx++){
